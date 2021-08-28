@@ -4,7 +4,6 @@
     // loading
     gsap.to('.loading', {y: '-100%', delay: 4})
 
-      // 이미지가 마우스 따라다니는 효과
     $('body').mousemove(function(e) {
         gsap.to('#cursor', { duration: 0.5 , x: e.clientX, y: e.clientY, ease: Power3.easeOut });
     });
