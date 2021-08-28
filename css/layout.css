@@ -1,0 +1,24 @@
+/* body */
+body {
+    cursor: none;
+    font-family: 'Arya', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+
+#cursor { position: fixed; left:0; top:0; pointer-events: none; z-index: 200; }
+.cursor_circle {
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid rgb(249, 84, 125);
+    /* transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    height 0.3s cubic-bezier(0.25, 1, 0.5, 1); */
+}
+
+header .header_inner {position: fixed; width: 100%; height: 50px; z-index:100;}
+header .logo { position: absolute; left: 30px; top: 50%; transform: translateY(-50%); font-weight: 700; font-size: 18px;}
+header .txt_wrap { position: absolute; left: 30px; top: 50px; line-height: 1; }
+header .txt_wrap span {display: block;}

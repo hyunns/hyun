@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Russo+One&amp;display=swap" rel="stylesheet">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="header_inner">
+            <a class="logo" href="index.html">Hyun's portfolio</a>
+            <div class="txt_wrap">
+                <span>Web Publisher</span>
+                <span>& FrontEnd</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="wrap">
+            <div id="cursor">
+                <div class="cursor_circle"></div>
+            </div>
+            <section class="swiper port_slider">
+                <h2 class="blind">portfolio</h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide port01">
+                        <a class="detail_page" href="#">
+                            <figure><img src="images/apple03.jpg" alt="apple"></figure>
+                        </a>
+                        <span class="line_grow"></span>
+                        <div class="txt_wrap">
+                            <span class="num">01</span>
+                            <strong>APPLE WATCH</strong>
+                            <a target="_blank" href="#">@applewatch</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide port02">
+                        <a class="detail_page" href="#">
+                            <figure><img src="images/andar2.jpg" alt="andar"></figure>
+                        </a>
+                        <span class="line_grow"></span>
+                        <div class="txt_wrap">
+                            <span class="num">02</span>
+                            <strong>ANDAR</strong>
+                            <a target="_blank" href="#">@andar</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide port03">
+                        <a class="detail_page" href="#">
+                            <figure><img src="images/haatz3.jpg" alt="haatz"></figure>
+                        </a>
+                        <span class="line_grow"></span>
+                        <div class="txt_wrap">
+                            <span class="num">03</span>
+                            <strong>HAATZ</strong>
+                            <a target="_blank" href="http://hyunns.github.io/haatz">@haatz</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="spin">
+                <svg viewBox="0 0 150 150" style="transform: translate3d(0px, 0px, 0px) rotate(313.192deg);">
+                    <path fill="transparent" id="curve" d="M 15, 75 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"></path>
+                    <text class="spin01">
+                        <textPath xlink:href="#curve">APPLE WATCH</textPath>
+                    </text>
+                    <text class="spin02" transform="rotate(120 75 75)">
+                        <textPath xlink:href="#curve">ANDAR</textPath>
+                    </text>
+                    <text class="spin03" transform="rotate(240 75 75)">
+                        <textPath xlink:href="#curve">HAATZ</textPath>
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <div class="loading">
+        <svg viewBox="0 0 1320 300">
+            <text dy=".35em" text-anchor="middle">hyun's portfolio</text>
+        </svg>  
+        <!-- <span>LOADING</span> -->
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="js/main.js?v=1.1"></script>
+</body>
+</html>
