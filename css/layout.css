@@ -1,8 +1,10 @@
 /* body */
 body {
-    cursor: none;
     font-family: 'Arya', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    cursor: none;
 }
+
+#wrap {overflow-x: hidden;}
 
 #cursor { position: fixed; left:0; top:0; pointer-events: none; z-index: 200; }
 .cursor_circle {
