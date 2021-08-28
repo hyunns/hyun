@@ -19,6 +19,6 @@ body {
 }
 
 header .header_inner {position: fixed; width: 100%; height: 50px; z-index:100;}
-header .logo { position: absolute; left: 30px; top: 50%; transform: translateY(-50%); font-weight: 700; font-size: 18px;}
+header .logo { position: absolute; left: 30px; top: 50%; font-weight: 700; font-size: 18px;}
 header .txt_wrap { position: absolute; left: 30px; top: 50px; line-height: 1; }
 header .txt_wrap span {display: block;}

@@ -9,8 +9,8 @@
     });
 
     //header
-    gsap.fromTo('header .logo', {y: '-100%', autoAlpha:0}, {y: '-50%', autoAlpha:1, duration: 0.5, delay: 1})
-    gsap.fromTo('header .txt_wrap *', {y: '-100%', autoAlpha: 0,}, {y: 0, autoAlpha: 1, duration: 0.5, stagger:0.2, delay: 1.5})
+    gsap.fromTo('header .logo', {y: '-100%', autoAlpha: 0}, {y: '-50%', autoAlpha:1, duration: 0.5, delay: 4.5})
+    gsap.fromTo('header .txt_wrap *', {y: '-100%', autoAlpha: 0,}, {y: 0, autoAlpha: 1, duration: 0.5, stagger:0.2, delay: 5})
 
     // spin    
     let spin = gsap.timeline({ scrollTrigger: { trigger: '.port_slider', start: 'top', scrub: 1, pin: true}})
