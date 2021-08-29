@@ -6,21 +6,30 @@ body {
 
 #wrap {overflow-x: hidden;}
 
-#cursor { position: fixed; left:0; top:0; pointer-events: none; z-index: 200; }
+#cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    /* mix-blend-mode: difference; */
+    z-index: 200;
+}
 .cursor_circle {
     width: 30px;
     height: 30px;
-    transform: translate(-50%, -50%);
+    /* border: 1px solid rgb(249, 84, 125); */
+    /* background: rgb(110, 68, 174, 0.7); */
+    border:1px solid rgb(110, 68, 174);
     border-radius: 50%;
-    border: 1px solid rgb(249, 84, 125);
+    transform: translate(-50%, -50%);
     /* transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
     background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
     border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
     width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
     height 0.3s cubic-bezier(0.25, 1, 0.5, 1); */
 }
-
-header .header_inner {position: fixed; width: 100%; height: 50px; z-index:100;}
-header .logo { position: absolute; left: 30px; top: 50%; font-weight: 700; font-size: 18px;}
-header .txt_wrap { position: absolute; left: 30px; top: 50px; line-height: 1; }
-header .txt_wrap span {display: block;}
+header .header_inner {position: fixed; width: 100%; height: 50px; z-index: 100; font-family: 'Montserrat', sans-serif;}
+header .logo { position: absolute; left: 30px; top: 50%; font-weight: 800; font-size: 20px; letter-spacing: 0.05em; }
+header .logo em {color: #8167a9;}
+header .txt_wrap { position: absolute; left: 30px; top: 60px;}
+header .txt_wrap span {display: block; line-height: 1.2;}
