@@ -4,41 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Montserrat:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Montserrat:wght@300;400;500;700;800&amp;Nanum+Gothic:wght@400;700&amp;display=swap" rel="stylesheet">
     <title>portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/index.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <header>
         <div class="header_inner">
-            <a class="logo" href="index.html"><em>Hyun's</em> portfolio</a>
+            <a class="logo" href="index.html">AHYUN.</a>
             <div class="txt_wrap">
                 <span>Web Publisher</span>
                 <span>& FrontEnd</span>
+            </div>
+            <div class="email">
+                <!-- <span>hyunna@gmail.com</span> -->
             </div>
         </div>
     </header>
     <main>
         <div id="wrap">
             <div id="cursor">
-                <div class="cursor_circle"></div>
+                <svg viewBox="0 0 100 100">
+                    <text dx="50%" dy="55%" text-anchor="middle">Go Site!</text>
+                </svg>
             </div>
             <section class="swiper port_slider">
                 <h2 class="blind">portfolio</h2>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide port01">
-                        <div class="img_wrap">
-                            <a class="detail_page" href="#">
-                                <figure><img src="images/apple03.jpg" alt="apple"></figure>
-                            </a>
-                            <div class="link_wrap">
-                                <span>Mobile</span>
-                                <a href="#">VIEW</a>
-                                <a href="#">GO SITE</a>
-                            </div>
-                        </div>
+                        <a class="img_wrap" href="http://hyunnnn.dothome.co.kr/apple" onClick="window.open(this.href, '', 'width=375, height=667'); return false;">
+                            <figure>
+                                <img src="images/apple01.jpg" alt="apple">
+                                <span class="txt">적응형 Mobile</span>
+                            </figure>
+                        </a>
                         <span class="line_grow"></span>
                         <div class="txt_wrap">
                             <span class="num">01</span>
@@ -48,14 +49,10 @@
                     </div>
                     <div class="swiper-slide port02">
                         <div class="img_wrap">
-                            <a class="detail_page" href="#">
-                                <figure><img src="images/andar2_1.jpg" alt="andar"></figure>
-                            </a>
-                            <div class="link_wrap">
-                                <span>Responsive</span>
-                                <a href="#">VIEW</a>
-                                <a href="#">GO SITE</a>
-                            </div>
+                            <figure>
+                                <img src="images/andar01.jpg" alt="andar">
+                                <span class="txt">적응형 PC</span>
+                            </figure>
                         </div>
                         <span class="line_grow"></span>
                         <div class="txt_wrap">
@@ -66,14 +63,10 @@
                     </div>
                     <div class="swiper-slide port03">
                         <div class="img_wrap">
-                            <a class="detail_page" href="#">
-                                <figure><img src="images/haatz6.png" alt="haatz"></figure>
-                            </a>
-                            <div class="link_wrap">
-                                <span>Responsive</span>
-                                <a href="#">VIEW</a>
-                                <a href="#">GO SITE</a>
-                            </div>
+                            <figure>
+                                <img src="images/haatz02.jpg" alt="haatz">
+                                <span class="txt">Responsive</span>
+                            </figure>
                         </div>
                         <span class="line_grow"></span>
                         <div class="txt_wrap">
@@ -102,16 +95,16 @@
     </main>
     <footer>
     </footer>
-    <div class="loading">
+    <!-- <div class="loading">
         <svg viewBox="0 0 1320 300">
             <text dy=".35em" text-anchor="middle">hyun's portfolio</text>
         </svg>  
         <span>Loading...</span>
-    </div>
+    </div> -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="js/main.js?v=1.1"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
