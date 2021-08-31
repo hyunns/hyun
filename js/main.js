@@ -13,17 +13,19 @@
     })
     $('.img_wrap').mouseleave(function() {
         gsap.to('#cursor svg', { visibility: 'hidden', opacity: 0,})
-        gsap.to('#cursor', 0.4, { width: 30, height: 30, })
+        gsap.to('#cursor', 0.4, { width: 60, height: 60, })
     })
 
-    //header
-    gsap.fromTo('header .logo', {y: '-100%', autoAlpha: 0}, {y: '-50%', autoAlpha:1, duration: 0.5, delay: 1})
-    gsap.fromTo('header .txt_wrap *', {y: '-100%', autoAlpha: 0,}, {y: 0, autoAlpha: 1, duration: 0.5, stagger:0.2, delay: 1.2})
+    // header
+    gsap.fromTo('header .top_header', {y: '-100%', autoAlpha: 0}, {y: '0', autoAlpha:1, duration: 0.5, delay: 4.5})
+    gsap.fromTo('.intro .tit_wrap em', { autoAlpha: 0, }, { autoAlpha: 1, 'letter-spacing':'0.2em', duration: 1},4.5)
+    gsap.fromTo('.intro .tit_wrap span', { autoAlpha: 0, }, { autoAlpha: 1, 'letter-spacing':'0.05em', duration: 1},4.5)
     
     // portfolio
     let port = gsap.timeline();
     port.fromTo('.swiper-slide .line_grow',{width: 0}, { width: '100%', duration: 1, delay:0.8,})
-    port.fromTo('.swiper-slide .txt_wrap *', { autoAlpha: 0, y: '100%'}, {duration:1, autoAlpha:1, y: 0, stagger: 0.15},'-=1')
+    port.to('.swiper-slide .txt_wrap', {duration: 0.5, autoAlpha: 1,'background-color':'#080808'},'-=1')
+    port.fromTo('.swiper-slide .txt_wrap *', { autoAlpha: 0, y: '100%'}, {duration:1, autoAlpha:1, y: 0, stagger: 0.15, 'background-color':'#080808'},'-=1')
 
     const portSlider = new Swiper('.port_slider', {
         direction: 'vertical',
@@ -31,9 +33,7 @@
         speed: 1000,
         mousewheel: true,
         on: {
-            init: function() {
-
-            },
+            init: function() { },
             slideChange: function() {
                 let i = this.realIndex;
                 port.delay(1).restart();

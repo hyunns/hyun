@@ -1,15 +1,11 @@
 /* body */
 body {
-    font-family: 'Arya', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    font-family: 'Playfair Display', 'Malgun Gothic', '맑은 고딕', serif, sans-serif;
+    color: #fff;
     cursor: none;
 }
-/* #wrap {overflow-x: hidden;} */
+#wrap { background: #080808; overflow-x: hidden; }
 
-#cursor { position: fixed; left: 0; top: 0; pointer-events: none; z-index: 200; width: 30px; height: 30px; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.2); border-radius: 50%; backdrop-filter: blur(10px); }
-#cursor svg {visibility: hidden; opacity: 0;}
-#cursor svg text { fill: #fff; }
-
-header .header_inner {position: fixed; width: 100%; height: 60px; z-index: 100; font-family: 'Montserrat', sans-serif;}
-header .logo { position: absolute; left: 30px; top: 50%; font-weight: 800; font-size: 20px; letter-spacing: 0.1em; }
-header .txt_wrap { position: absolute; left: 30px; top: 70px;}
-header .txt_wrap span {display: block; line-height: 1.2;}
+header .top_header { position: fixed; width: 100%; height: 80px; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; color: #fff; z-index: 100; }
+header .top_header .logo { font-size: 42px; font-weight: 500; font-style: italic; height:80px; line-height: 80px; letter-spacing: 0.1em; }
+header .top_header .email {font-size: 20px; letter-spacing: 0.05em;}
