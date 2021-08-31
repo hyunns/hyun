@@ -1,10 +1,8 @@
-/* 태블릿 분기점 */
-/* @media (max-width: 1024px) {
-} */
 /* 모바일 분기점 */
 @media (max-width: 768px) {
     header .top_header .email {font-size: 16px;}
 
+    /* intro */
     .intro .tit_wrap span { font-size: 16px; }
 
     /* portfolio */
@@ -14,4 +12,6 @@
     .port_slider .swiper-slide .img_wrap { width: 40vh; height: 60vh; }
     .port_slider .swiper-slide .txt {font-size: 24px;}
     .port_slider .txt_wrap { width: 100%;}
+
+    footer .footer_inner {font-size: 12px;}
 }

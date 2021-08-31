@@ -5,20 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="description" content="This site is the web portfolio of web publisher A Hyun Yu">
-    <meta property="og:url" content="https://hyunns.github.io/hyun">
+    <meta property="og:url" content="https://hyunns.github.io/hyun/">
     <meta property="og:title" content="웹퍼블리셔 유아현 포트폴리오">
     <meta property="og:type" content="website">
-    <!-- 오픈그래프용 사진 깃헙에 올리기 -->
-    <meta property="og:image" content="images/og.png">
+    <meta property="og:image" content="images/og_tag.png">
     <meta property="og:description" content="This site is the web portfolio of web publisher A Hyun Yu">
     <title>portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?v=<?php echo time(); ?>">
     <link rel="icon" href="images/favicon.ico?v=<?php echo time(); ?>" type="image/x-icon">
-    <!-- iOS용 홈화면아이콘 깃헙에 올리기 -->
-    <link rel="apple-touch-icon" href="images/app_home.jpg">
+    <link rel="apple-touch-icon" href="images/app_home.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&amp;family=Montserrat:wght@600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400&amp;family=Montserrat:wght@600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="css/index.css?v=<?php echo time(); ?>">
@@ -48,11 +46,11 @@
                     <span>A Hyun | Web Publisher</span>
                 </div>
             </section>
-            <section id="portFolio" class="swiper port_slider">
+            <section class="swiper port_slider">
                 <h2 class="blind">portfolio</h2>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide port01">
-                        <a class="img_wrap" href="http://hyunnnn.dothome.co.kr/apple" onClick="window.open(this.href, '', 'width=375, height=667'); return false;">
+                        <a class="img_wrap" href="https://hyunns.github.io/apple/" onClick="window.open(this.href, '', 'width=375, height=667'); return false;">
                             <figure>
                                 <img src="images/apple01.jpg" alt="apple">
                                 <span class="txt">Mobile</span>
@@ -66,12 +64,12 @@
                         </div>
                     </div>
                     <div class="swiper-slide port02">
-                        <div class="img_wrap">
+                        <a class="img_wrap" href="https://hyunns.github.io/andar/">
                             <figure>
                                 <img src="images/andar01.jpg" alt="andar">
                                 <span class="txt">PC</span>
                             </figure>
-                        </div>
+                        </a>
                         <span class="line_grow"></span>
                         <div class="txt_wrap">
                             <span class="num">02</span>
@@ -80,12 +78,12 @@
                         </div>
                     </div>
                     <div class="swiper-slide port03">
-                        <div class="img_wrap">
+                        <a class="img_wrap" href="https://hyunns.github.io/haatz/">
                             <figure>
                                 <img src="images/haatz01.jpg" alt="haatz">
                                 <span class="txt">Responsive</span>
                             </figure>
-                        </div>
+                        </a>
                         <span class="line_grow"></span>
                         <div class="txt_wrap">
                             <span class="num">03</span>
@@ -112,10 +110,16 @@
         </div>
     </main>
     <footer>
+        <div class="footer_inner">
+            <p>
+                본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
+                <span>Copyright 2021. AHYUNYU all rights reserved.</span>
+            </p>
+        </div>
     </footer>
     <div class="loading">
         <svg viewBox="0 0 1320 300">
-            <text dy=".35em" text-anchor="middle">hyun's portfolio</text>
+            <text dy=".35em" text-anchor="middle">A.</text>
         </svg>  
         <span>Loading...</span>
     </div>

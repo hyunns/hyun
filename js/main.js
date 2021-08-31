@@ -2,7 +2,7 @@
     gsap.registerPlugin(ScrollTrigger);
     
     // loading screen
-    gsap.to('.loading', {y: '-100%', delay: 4})
+    gsap.to('.loading', {y: '-100%', delay: 3.8, ease: Power3.easeIn})
     
     // mouse effect
     $('body').mousemove(function(e) { gsap.to('#cursor', { duration: 0.4 , x: e.clientX, y: e.clientY, ease: Power3.easeOut }) });
@@ -17,7 +17,7 @@
     })
 
     // header
-    gsap.fromTo('header .top_header', {y: '-100%', autoAlpha: 0}, {y: '0', autoAlpha:1, duration: 0.5, delay: 4.5})
+    gsap.fromTo('header .top_header', {y: '-100%', autoAlpha: 0}, {y: '0', autoAlpha:1, duration: 0.8, delay: 4})
     gsap.fromTo('.intro .tit_wrap em', { autoAlpha: 0, }, { autoAlpha: 1, 'letter-spacing':'0.2em', duration: 1},4.5)
     gsap.fromTo('.intro .tit_wrap span', { autoAlpha: 0, }, { autoAlpha: 1, 'letter-spacing':'0.05em', duration: 1},4.5)
     
@@ -39,10 +39,19 @@
                 port.delay(1).restart();
                 if (i === 0) {
                     gsap.to('.spin', {rotation: 72, duration: 1.2})
+                    gsap.to('.spin01', {'fill': 'rgb(255, 255, 255, 0.8)'})
+                    gsap.to('.spin02', {'fill': 'rgb(255, 255, 255, 0.2)'})
+                    gsap.to('.spin03', {'fill': 'rgb(255, 255, 255, 0.2)'})
                 } else if (i === 1) {
                     gsap.to('.spin', {rotation: -50, duration: 1.2})
+                    gsap.to('.spin01', {'fill': 'rgb(255, 255, 255, 0.2)'})
+                    gsap.to('.spin02', {'fill': 'rgb(255, 255, 255, 0.8)'})
+                    gsap.to('.spin03', {'fill': 'rgb(255, 255, 255, 0.2)'})
                 } else {
                     gsap.to('.spin', {rotation: -165, duration: 1.2})
+                    gsap.to('.spin01', {'fill': 'rgb(255, 255, 255, 0.2)'})
+                    gsap.to('.spin02', {'fill': 'rgb(255, 255, 255, 0.2)'})
+                    gsap.to('.spin03', {'fill': 'rgb(255, 255, 255, 0.8)'})
                 }
             }
         }

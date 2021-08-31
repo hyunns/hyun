@@ -1,6 +1,6 @@
 /* body */
 body {
-    font-family: 'Playfair Display', 'Malgun Gothic', '맑은 고딕', serif, sans-serif;
+    font-family: 'Playfair Display', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', serif, sans-serif;
     color: #fff;
     cursor: none;
 }
@@ -9,3 +9,5 @@ body {
 header .top_header { position: fixed; width: 100%; height: 80px; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; color: #fff; z-index: 100; }
 header .top_header .logo { font-size: 42px; font-weight: 500; font-style: italic; height:80px; line-height: 80px; letter-spacing: 0.1em; }
 header .top_header .email {font-size: 20px; letter-spacing: 0.05em;}
+
+footer .footer_inner { position: relative; background: #222; text-align: center; font-size: 14px; line-height: 2; padding: 20px 0; }
