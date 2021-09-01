@@ -1,9 +1,9 @@
 /* main */
 .intro {position: relative; height: 100vh; }
 .intro img {object-fit: cover; height: 100vh;}
-.intro .tit_wrap { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; white-space: nowrap; }
-.intro .tit_wrap em { display: block; font-size: 8vw; /* font-style: italic; */ }
-.intro .tit_wrap span { position: relative; display: inline-block; padding: 0 20px; font-size: 2vw; font-style: italic; color: rgb(255, 255, 255, 0.8); }
+.intro .tit_wrap { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; white-space: nowrap; display: inline-block; font-style: italic; }
+.intro .tit_wrap em { display: block; font-size: 10vw; font-style: italic;}
+.intro .tit_wrap span { position: relative; display: inline-block; padding: 0 20px; font-size: 2vw;  color: rgb(255, 255, 255, 0.8); }
 .intro .tit_wrap span:before { content:''; position: absolute; left: -100%; top: 50%; width: 100%; height:1px; background:#fff; }
 .intro .tit_wrap span:after { content:''; position: absolute; right: -100%; top: 50%; width: 100%; height:1px; background:#fff; }
 

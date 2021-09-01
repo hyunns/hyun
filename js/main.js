@@ -18,8 +18,7 @@
 
     // header
     gsap.fromTo('header .top_header', {y: '-100%', autoAlpha: 0}, {y: '0', autoAlpha:1, duration: 0.8, delay: 4})
-    gsap.fromTo('.intro .tit_wrap em', { autoAlpha: 0, }, { autoAlpha: 1, 'letter-spacing':'0.2em', duration: 1},4.5)
-    gsap.fromTo('.intro .tit_wrap span', { autoAlpha: 0, }, { autoAlpha: 1, 'letter-spacing':'0.05em', duration: 1},4.5)
+    gsap.fromTo('.intro .tit_wrap *', { autoAlpha: 0, }, { autoAlpha: 1, 'letter-spacing':'0.05em', duration: 1},4.5)
     
     // portfolio
     let port = gsap.timeline();
