@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Roxborough-thin';
+    src: url("../font/RoxboroughCF-Thin.woff2") format("woff2"),
+        url("../font/RoxboroughCF-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roxborough-light';
+    src: url("../font/RoxboroughCF-Light.woff2") format("woff2"),
+        url("../font/RoxboroughCF-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Regular.eot');
@@ -11,23 +29,11 @@
     font-display: swap;
 } */
 
+
 .blind { position: absolute; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; width: 1px; height: 1px; }
 
 body.hidden {height: 100%; overflow-y: hidden; }
 
-#cursor {
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    z-index: 200;
-    width: 60px;
-    height: 60px;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-    /* backdrop-filter: blur(10px); */
-}
+#cursor { position: fixed; left: 0; top: 0; pointer-events: none; z-index: 200; width: 60px; height: 60px; transform: translate(-50%, -50%); background: #fff; border-radius: 50%; mix-blend-mode: difference; }
 #cursor svg {visibility: hidden; opacity: 0;}
 #cursor svg text {fill: #000;}

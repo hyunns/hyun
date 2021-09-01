@@ -6,12 +6,12 @@
     .intro .tit_wrap span { font-size: 16px; }
 
     /* portfolio */
-    .port_slider .swiper-slide { justify-content: center; }
+    /* .port_slider .swiper-slide { justify-content: center; }
     .spin { top: 50%; margin-left: -50vw; margin-top: -50vw; width: 100vw; height: 100vw; }
     .port_slider .swiper-slide {width: 80%;}
     .port_slider .swiper-slide .img_wrap { width: 40vh; height: 60vh; }
     .port_slider .swiper-slide .txt {font-size: 24px;}
-    .port_slider .txt_wrap { width: 100%;}
+    .port_slider .txt_wrap { width: 100%;} */
 
     footer .footer_inner {font-size: 12px;}
 }

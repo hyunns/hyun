@@ -7,24 +7,24 @@
 .intro .tit_wrap span:before { content:''; position: absolute; left: -100%; top: 50%; width: 100%; height:1px; background:#fff; }
 .intro .tit_wrap span:after { content:''; position: absolute; right: -100%; top: 50%; width: 100%; height:1px; background:#fff; }
 
-/* portfolio slide */
-.port_slider .swiper-wrapper { height: 100vh; }
-.port_slider .swiper-slide { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 45%; height: 100%; margin: 0 auto; }
+/* contents */
+.contents{ position: relative; height: 100vh; overflow: hidden; background: #000; }
+.contents ul { position: absolute; top: 0; left: 0; width:100%; z-index: 10; }
+.contents ul li{ display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100vh; margin: 0 auto; z-index:2; }
 
-.port_slider .swiper-slide .img_wrap { position: relative; width: 50vh; height: 70vh; }
-.port_slider .swiper-slide .img_wrap figure:before { content:''; position: absolute; left:0; top:0; width: 100%; height: 100%; transition: background-color 0.4s; }
-.port_slider .swiper-slide .img_wrap figure:hover:before { background-color: rgba(0,0,0,0.7);}
-.port_slider .swiper-slide .img_wrap figure:hover .txt {opacity:1;}
-.port_slider .swiper-slide .txt { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.4s; font-size: 28px;}
+.contents .img_wrap { position: relative; width: 50vh; height: 70vh; display: block; }
+.contents .img_wrap figure:before { content:''; position: absolute; left:0; top:0; width: 100%; height: 100%; transition: background-color 0.4s; }
+.contents .img_wrap figure:hover:before { background-color: rgba(0,0,0,0.7);}
+.contents .img_wrap figure:hover .txt {opacity:1;}
+.contents .txt { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.4s; font-size: 28px;}
 
-.port_slider .swiper-slide figure { position: absolute; left: 0; bottom: 0; width: 100%; overflow: hidden; height: 0; transition: height 0.5s 0.8s ease-in-out; }
-.port_slider .swiper-slide figure>img { object-fit: cover; width: 100%; height: 100%; }
-.port_slider .swiper-slide-active figure {height: 100%;}
+.contents figure { position: absolute; left: 0; bottom: 0; width: 100%; overflow: hidden; transition: height 0.5s 0.8s ease-in-out; }
+.contents figure>img { object-fit: cover; width: 100%; height: 100%; }
 
-.port_slider .line_grow { position: relative; left: 0; top: 0; height: 1px; background: #c7c7c7; margin-top: 12px; transform: scale(1, 1); transform-origin: center center; }
-.port_slider .txt_wrap { display: flex; flex-direction: column; align-items: center; font-weight: 700; line-height: 1.2; padding-top: 12px;}
-.port_slider .txt_wrap strong {font-size: 1.5rem;}
-.port_slider .txt_wrap .contrib {font-weight: 500; margin-top: 10px;}
+.contents .line_grow { position: relative; left: 0; top: 0; height: 1px; background: #c7c7c7; margin-top: 12px; transform: scale(0.5, 0.5); transform-origin: center center; }
+.contents .txt_wrap { display: flex; flex-direction: column; align-items: center; line-height: 1.2; padding-top: 12px;}
+.contents .txt_wrap strong {font-size: 1.5rem;}
+.contents .txt_wrap .contrib {font-weight: 500; margin-top: 10px;} 
 
 /* loading */
 .loading { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index:100; background-color: #000; overflow: hidden;}
@@ -40,7 +40,5 @@
 }
 
 /* spin */
-.port_slider .spin { position: fixed; left: 50%; margin-left: -40vw; top: calc(100% - 40vw); width: 80vw; height: 80vw; transform: rotate(72deg); z-index: -1; }
-.port_slider .spin { position: absolute; left: 50%; margin-left: -40vw; top: calc(100% - 40vw); width: 80vw; height: 80vw; transform: rotate(72deg); z-index: -1; }
-.port_slider .spin svg { fill: rgb(255, 255, 255, 0.2); }
-.port_slider .spin01 svg { fill: rgb(255, 255, 255, 0.8); }
+.contents .spin { position: absolute; left: 50%; margin-left: -40vw; top: calc(100% - 40vw); width: 80vw; height: 80vw; transform: rotate(72deg); z-index: 1; letter-spacing: -0.025em;}
+.contents .spin svg { fill: rgb(255, 255, 255, 0.2); }
