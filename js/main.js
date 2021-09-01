@@ -44,7 +44,7 @@
     txt2.fromTo('.port02 .line_grow', {width:0}, {width:'100%', duration: 1, delay:1})
     txt2.fromTo('.port02 .txt_wrap *', { autoAlpha: 0, y: '100%'}, {duration:1, autoAlpha:1, y: 0, stagger: 0.2},'-=1')
     
-    let txt3 = gsap.timeline({ scrollTrigger: { trigger :'.contents .port03', start: "top top", end: "+=2000", scrub: 1} });
+    let txt3 = gsap.timeline({ scrollTrigger: { trigger :'.contents .port03', start: "top top", end: "+=2200", scrub: 1} });
     txt3.fromTo('.port03 .line_grow', {width:0}, {width:'100%', duration: 1, delay:1})
     txt3.fromTo('.port03 .txt_wrap *', { autoAlpha: 0, y: '100%'}, {duration:1, autoAlpha:1, y: 0, stagger: 0.2},'-=1')
 })();

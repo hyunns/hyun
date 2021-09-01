@@ -4,9 +4,10 @@
 
     /* intro */
     .intro .tit_wrap span { font-size: 16px; }
+    .intro .tit_wrap span:before {left: -50%; width: 50%;}
+    .intro .tit_wrap span:after {right: -50%; width: 50%;}
 
     /* contents */
-    .contents>ul>li {width: 80%;}
     .contents>ul>li .img_wrap { width: 40vh; height: 60vh; }
     .spin { top: 50%; margin-left: -50vw; margin-top: -50vw; width: 100vw; height: 100vw; }
 
