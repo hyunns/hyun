@@ -32,7 +32,9 @@
         speed: 1000,
         mousewheel: true,
         on: {
-            init: function() { },
+            init: function() {
+                gsap.to('.spin01', {'fill': 'rgb(255, 255, 255, 0.8)'})
+            },
             slideChange: function() {
                 let i = this.realIndex;
                 port.delay(1).restart();
